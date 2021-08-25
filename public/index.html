@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Real-time Sensor Data</title>
+    
+</head>
+<body>  
+    <main id="main-section">
+        <div id="header">
+            <h1>Real-time Sensor Data</h1>
+             <a href="./data.html">Check historic data </a>  
+        </div>
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Temperature</th>
+                        <th>Battery Level</th>
+                        <th>Date - Time </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+            
+                </tbody>
+            </table>
+        </div>
+    </main>
+  
+    
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="./js/main.js"></script>
+</body>
+</html>
